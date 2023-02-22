@@ -16,9 +16,9 @@ int main()
   unsigned char outl;
   while(true){
     if(fin.is_open()&&fout.is_open()){
-      cout << "Ввод с консоли (0) или в файл(1): ";
+      cout << "Ввод с консоли (0) или с файл(1): ";
       inl = read_0_1();
-      cout << "Вsвод с консоли (0) или в файл(1): ";
+      cout << "Вывод с консоли (0) или в файл(1): ";
       outl = read_0_1();
       if(inl == '0'){
         initcon();
