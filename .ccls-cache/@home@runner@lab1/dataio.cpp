@@ -1,12 +1,8 @@
-#include <fstream>
 #include <iostream>
-#include <istream>
 #include <limits>
 
 using std::cin;
 using std::cout;
-using std::ifstream;
-using std::string;
 
 unsigned char read_0_1() {
   while (true) {
@@ -26,11 +22,11 @@ unsigned int read_uint() {
     unsigned int enter;
     cin >> enter;
     cout << "\n";
-    if(cin.fail()){
+    if (cin.fail()) {
       cin.clear();
       cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       cout << "Ошибка ввода\n";
-    }else{
+    } else {
       cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       return enter;
     }
